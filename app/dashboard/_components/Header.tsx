@@ -1,8 +1,17 @@
+import { Search } from 'lucide-react'
 import React from 'react'
 
 function Header() {
   return (
-    <div>Header</div>
+    <div className='p-5 border-b-2 shadow-sm flex justify-between items-center'>
+      <div className='flex gap-2 items-center p-2 border rounded-md max-w-md'>
+        <Search />
+        <input type='text' placeholder='Search...' className='outline-none'/>
+      </div>
+      <div>
+        <h2 className='bg-primary p-2 rounded-full text-sm text-white px-3'>Subscribe for a membership plan for just $9.99/month</h2>
+      </div>
+    </div>
   )
 }
 
