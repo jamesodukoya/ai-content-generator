@@ -2,7 +2,7 @@
 export default [
     {
         name: 'Blog Title',
-        decr: 'An AI tool that generates optimized blog titles based on your query.',
+        desc: 'An AI tool that generates optimized blog titles based on your query.',
         category: 'Blog',
         icon: '/blog-title.png',
         aiPrompt: 'Suggest 5 blog titles in a bulleted list format based on the specified niche topic and outline. Show the results in Rich text editor format.',
@@ -23,7 +23,7 @@ export default [
     },
     {
         name: 'Blog Content',
-        decr: 'An AI tool that serves as your personal blog writer. All you need to do is enter your specific query.',
+        desc: 'An AI tool that serves as your personal blog writer. All you need to do is enter your specific query.',
         category: 'Blog',
         icon: '/blog-content.png',
         aiPrompt: 'Generate blog content based on the specified blog title, niche topic, and outline. Show the results in Rich text editor format.',
@@ -50,7 +50,7 @@ export default [
     },
     {
         name: 'Blog Topic Ideas',
-        decr: 'An AI tool that generates blog topic ideas based on your query.',
+        desc: 'An AI tool that generates blog topic ideas based on your query.',
         category: 'Blog',
         icon: '/blog-topic-ideas.png',
         aiPrompt: 'Suggest 5 blog topic ideas in a bulleted list format based on a specified niche topic and marketing goals. Show the results in Rich text editor format.',
@@ -72,7 +72,7 @@ export default [
     },
     {
         name: 'Blog Meta Description',
-        decr: 'An AI tool that generates an optimized meta description for your blog article.',
+        desc: 'An AI tool that generates an optimized meta description for your blog article.',
         category: 'Blog',
         icon: '/blog-meta-description.png',
         aiPrompt: 'Generate an SEO-optimized meta description for a blog article based on the specified blog title, niche topic, and outline below. Show the results in Rich text editor format.',
@@ -99,7 +99,7 @@ export default [
     },
     {
         name: 'YouTube SEO Title',
-        decr: 'An AI tool that generates YouTube SEO titles based on your query.',
+        desc: 'An AI tool that generates YouTube SEO titles based on your query.',
         category: 'YouTube',
         icon: '/youtube-seo-title.png',
         aiPrompt: 'Suggest 5 YouTube SEO titles based on the specified niche topic and marketing goal below.',
@@ -121,7 +121,7 @@ export default [
     },
     {
         name: 'YouTube Topic Ideas',
-        decr: 'An AI tool that generates intelligent topic ideas for your YouTube videos',
+        desc: 'An AI tool that generates intelligent topic ideas for your YouTube videos',
         category: 'YouTube',
         icon: '/youtube-topic-ideas.png',
         aiPrompt: 'Generate smart topic ideas for a YouTube video based on the specified niche topic and marketing goal.',
@@ -142,7 +142,7 @@ export default [
     },
     {
         name: 'YouTube Tags',
-        decr: 'An AI tool that generates relevant hashtags for your YouTube videos',
+        desc: 'An AI tool that generates relevant hashtags for your YouTube videos',
         category: 'YouTube',
         icon: '/youtube-hashtag.png',
         aiPrompt: 'Generate 10 or more relevant hashtags for a YouTube video based on the specified title and niche topic.',
@@ -164,7 +164,7 @@ export default [
     },
     {
         name: 'Email Subject Line',
-        decr: 'An AI tool that boosts your open rates by generating highly effective subject lines for your marketing emails.',
+        desc: 'An AI tool that boosts your open rates by generating highly effective subject lines for your marketing emails.',
         category: 'Email',
         icon: '/email-subject-line.png',
         aiPrompt: 'Suggest 5 email subject lines based on the specified marketing goal, niche topic, and outline below.',
@@ -191,7 +191,7 @@ export default [
     },
     {
         name: 'Email Content',
-        decr: 'An AI tool that boosts your clickthrough rates by generating highly effective content for your marketing emails.',
+        desc: 'An AI tool that boosts your clickthrough rates by generating highly effective content for your marketing emails.',
         category: 'Email',
         icon: '/email-content.png',
         aiPrompt: 'Write a compelling marketing email based on the specified subject line, marketing goal, niche topic, and outline below.',
@@ -224,7 +224,7 @@ export default [
     },
     {
         name: 'Instagram Caption',
-        decr: 'An AI tool that boosts your engagement by generating highly effective captions for your Instagram posts.',
+        desc: 'An AI tool that boosts your engagement by generating highly effective captions for your Instagram posts.',
         category: 'Instagram',
         icon: '/instagram-caption.png',
         aiPrompt: 'Generate a highly effective Instagram caption based on the specified niche topic, marketing goal, and post description.',
@@ -245,16 +245,16 @@ export default [
             {
                 label: "What's your post about?",
                 field: 'textarea',
-                name: 'post-decription'
+                name: 'post-desciption'
             }
         ]
     },
     {
         name: 'Instagram Hashtags',
-        decr: 'An AI tool that generates highly effective hashtags that drive traffic to your Instagram posts.',
+        desc: 'An AI tool that generates highly effective hashtags that drive traffic to your Instagram posts.',
         category: 'Instagram',
         icon: '/youtube-hashtag.png',
-        aiPrompt: 'Generate 10 or more relevant Instagram hashtags based on the specified post caption, niche topic, and post decription.',
+        aiPrompt: 'Generate 10 or more relevant Instagram hashtags based on the specified post caption, niche topic, and post desciption.',
         slug: 'generate-instagram-hashtags',
         form: [
             {
@@ -272,13 +272,13 @@ export default [
             {
                 label: "What's your post about?",
                 field: 'textarea',
-                name: 'post-decription'
+                name: 'post-desciption'
             }
         ]
     },
     {
         name: 'Ecommerce Product Description',
-        decr: 'An AI tool that generates highly compelling eCommerce product descriptions for you.',
+        desc: 'An AI tool that generates highly compelling eCommerce product descriptions for you.',
         category: 'Ecommerce',
         icon: '/product-description.png',
         aiPrompt: 'Generate a highly compelling eCommerce product description based on the specified product name, eCommerce niche, and selling points.',
