@@ -15,7 +15,7 @@ export default [
                 required: true
             },
             {
-                label: 'Enter blog outline',
+                label: 'Enter blog outline (optional)',
                 field: 'textarea',
                 name: 'outline'
             }
@@ -42,7 +42,7 @@ export default [
                 required: true
             },
             {
-                label: 'Enter blog outline',
+                label: 'Enter blog outline (optional)',
                 field: 'textarea',
                 name: 'outline'
             }
@@ -63,7 +63,7 @@ export default [
                 required: true
             },
             {
-                label: 'Enter your marketing goal',
+                label: 'Enter your marketing goal (optional)',
                 field: 'textarea',
                 name: 'goal',
                 
@@ -91,7 +91,7 @@ export default [
                 required: true
             },
             {
-                label: 'Enter blog outline',
+                label: 'Enter blog outline (optional)',
                 field: 'textarea',
                 name: 'outline'
             }
@@ -134,7 +134,7 @@ export default [
                 required: true
             },
             {
-                label: 'Enter your marketing goal',
+                label: 'Enter your marketing goal (optional)',
                 field: 'textarea',
                 name: 'marketing-goal'
             }
@@ -183,7 +183,7 @@ export default [
                 required: true
             },
             {
-                label: 'Enter email content outline',
+                label: 'Enter email content outline (optional)',
                 field: 'textarea',
                 name: 'outline',
             }
@@ -216,7 +216,7 @@ export default [
                 required: true
             },
             {
-                label: 'Enter email content outline',
+                label: 'Enter email content outline (optional)',
                 field: 'textarea',
                 name: 'outline'
             }
@@ -228,7 +228,7 @@ export default [
         category: 'Instagram',
         icon: '/instagram-caption.png',
         aiPrompt: 'Generate a highly effective Instagram caption based on the specified niche topic, marketing goal, and post description.',
-        slug: 'generate-blog-content',
+        slug: 'generate-instagram-caption',
         form: [
             {
                 label: 'Enter your marketing goal',
@@ -243,7 +243,7 @@ export default [
                 required: true
             },
             {
-                label: "What's your post about?",
+                label: "What's your post about? (optional)",
                 field: 'textarea',
                 name: 'post-desciption'
             }
@@ -270,14 +270,14 @@ export default [
                 required: true
             },
             {
-                label: "What's your post about?",
+                label: "What's your post about? (optional)",
                 field: 'textarea',
                 name: 'post-desciption'
             }
         ]
     },
     {
-        name: 'Ecommerce Product Description',
+        name: 'Product Description',
         desc: 'An AI tool that generates highly compelling eCommerce product descriptions for you.',
         category: 'Ecommerce',
         icon: '/product-description.png',
@@ -297,7 +297,7 @@ export default [
                 required: true
             },
             {
-                label: 'Enter a few selling points of your product',
+                label: 'Enter a few selling points of your product (optional)',
                 field: 'textarea',
                 name: 'selling-points'
             }
