@@ -5,7 +5,7 @@ export default [
         desc: 'An AI tool that generates optimized blog titles based on your query.',
         category: 'Blog',
         icon: '/blog-title.png',
-        aiPrompt: 'Suggest 5 blog titles in a bulleted list format based on the specified niche topic and outline. Show the results in Rich text editor format.',
+        aiPrompt: 'Suggest 5 search engine optimized blog titles in a bulleted list format based on the specified niche topic and outline. Return only the blog titles and nothing else',
         slug: 'generate-blog-title',
         form: [
             {
@@ -26,7 +26,7 @@ export default [
         desc: 'An AI tool that serves as your personal blog writer. All you need to do is enter your specific query.',
         category: 'Blog',
         icon: '/blog-content.png',
-        aiPrompt: 'Generate blog content based on the specified blog title, niche topic, and outline. Show the results in Rich text editor format.',
+        aiPrompt: 'Generate blog content based on the specified blog title, niche topic, and outline. Return only the blog content and nothing else',
         slug: 'generate-blog-content',
         form: [
             {
@@ -53,7 +53,7 @@ export default [
         desc: 'An AI tool that generates blog topic ideas based on your query.',
         category: 'Blog',
         icon: '/blog-topic-ideas.png',
-        aiPrompt: 'Suggest 5 blog topic ideas in a bulleted list format based on a specified niche topic and marketing goals. Show the results in Rich text editor format.',
+        aiPrompt: 'Suggest 5 blog topic ideas in a bulleted list format based on a specified niche topic and marketing goals. Return only the topic ideas and nothing else',
         slug: 'generate-blog-topic-ideas',
         form: [
             {
@@ -75,7 +75,7 @@ export default [
         desc: 'An AI tool that generates an optimized meta description for your blog article.',
         category: 'Blog',
         icon: '/blog-meta-description.png',
-        aiPrompt: 'Generate an SEO-optimized meta description for a blog article based on the specified blog title, niche topic, and outline below. Show the results in Rich text editor format.',
+        aiPrompt: 'Generate an SEO-optimized meta description for a blog article based on the specified blog title, niche topic, and outline below. Return only the meta description and nothing else',
         slug: 'generate-blog-meta-description',
         form: [
             {
@@ -102,7 +102,7 @@ export default [
         desc: 'An AI tool that generates YouTube SEO titles based on your query.',
         category: 'YouTube',
         icon: '/youtube-seo-title.png',
-        aiPrompt: 'Suggest 5 YouTube SEO titles based on the specified niche topic and marketing goal below.',
+        aiPrompt: 'Suggest 5 YouTube SEO titles based on the specified niche topic and marketing goal below. Return only the SEO titles and nothing else',
         slug: 'generate-youtube-seo-title',
         form: [
             {
@@ -124,7 +124,7 @@ export default [
         desc: 'An AI tool that generates intelligent topic ideas for your YouTube videos',
         category: 'YouTube',
         icon: '/youtube-topic-ideas.png',
-        aiPrompt: 'Generate smart topic ideas for a YouTube video based on the specified niche topic and marketing goal.',
+        aiPrompt: 'Generate smart topic ideas for a YouTube video based on the specified niche topic and marketing goal. Return only the topic ideas and nothing else',
         slug: 'generate-youtube-topic-ideas',
         form: [
             {
@@ -145,7 +145,7 @@ export default [
         desc: 'An AI tool that generates relevant hashtags for your YouTube videos',
         category: 'YouTube',
         icon: '/youtube-hashtag.png',
-        aiPrompt: 'Generate 10 or more relevant hashtags for a YouTube video based on the specified title and niche topic.',
+        aiPrompt: 'Generate 10 or more relevant hashtags for a YouTube video based on the specified title and niche topic. Return only the hashtags and nothing else',
         slug: 'generate-youtube-hashtag',
         form: [
             {
@@ -167,7 +167,7 @@ export default [
         desc: 'An AI tool that boosts your open rates by generating highly effective subject lines for your marketing emails.',
         category: 'Email',
         icon: '/email-subject-line.png',
-        aiPrompt: 'Suggest 5 email subject lines based on the specified marketing goal, niche topic, and outline below.',
+        aiPrompt: 'Suggest 5 email subject lines based on the specified marketing goal, niche topic, and outline below. Return only the subject lines and nothing else',
         slug: 'generate-email-subject-line',
         form: [
             {
@@ -194,7 +194,7 @@ export default [
         desc: 'An AI tool that boosts your clickthrough rates by generating highly effective content for your marketing emails.',
         category: 'Email',
         icon: '/email-content.png',
-        aiPrompt: 'Write a compelling marketing email based on the specified subject line, marketing goal, niche topic, and outline below.',
+        aiPrompt: 'Write a compelling marketing email based on the specified subject line, marketing goal, niche topic, and outline below. Return only the email content and nothing else',
         slug: 'generate-email-content',
         form: [
             {
@@ -227,7 +227,7 @@ export default [
         desc: 'An AI tool that boosts your engagement by generating highly effective captions for your Instagram posts.',
         category: 'Instagram',
         icon: '/instagram-caption.png',
-        aiPrompt: 'Generate a highly effective Instagram caption based on the specified niche topic, marketing goal, and post description.',
+        aiPrompt: 'Generate a highly effective Instagram caption based on the specified niche topic, marketing goal, and post description. Return only the caption and nothing else',
         slug: 'generate-instagram-caption',
         form: [
             {
@@ -254,7 +254,7 @@ export default [
         desc: 'An AI tool that generates highly effective hashtags that drive traffic to your Instagram posts.',
         category: 'Instagram',
         icon: '/youtube-hashtag.png',
-        aiPrompt: 'Generate 10 or more relevant Instagram hashtags based on the specified post caption, niche topic, and post desciption.',
+        aiPrompt: 'Generate 10 or more relevant Instagram hashtags in bulleted list format based on the specified post caption, niche topic, and post desciption. Return the hashtags with no description',
         slug: 'generate-instagram-hashtags',
         form: [
             {
@@ -281,7 +281,7 @@ export default [
         desc: 'An AI tool that generates highly compelling eCommerce product descriptions for you.',
         category: 'Ecommerce',
         icon: '/product-description.png',
-        aiPrompt: 'Generate a highly compelling eCommerce product description based on the specified product name, eCommerce niche, and selling points.',
+        aiPrompt: 'Generate a highly compelling eCommerce product description based on the specified product name, eCommerce niche, and selling points. Return only the product description and nothing else',
         slug: 'generate-product-description',
         form: [
             {
