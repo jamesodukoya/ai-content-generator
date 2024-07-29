@@ -28,7 +28,7 @@ function FormSection({ selectedTemplate, userFormInput, loading }: PROPS) {
     }
 
   return (
-      <div className='p-5 shadow-lg border rounded-lg bg-white'>
+      <div className='p-5 flex flex-col shadow-lg border rounded-lg bg-white'>
           {/* @ts-ignore */}
           <Image src={selectedTemplate?.icon} alt='icon' width={70} height={70} />
           <h2 className='font-bold text-2xl mb-2 text-primary'>{selectedTemplate?.name}</h2>
@@ -47,7 +47,7 @@ function FormSection({ selectedTemplate, userFormInput, loading }: PROPS) {
                       }
                   </div>
               ))}
-              <Button type='submit' className='p-6' disabled={loading}>
+              <Button type='submit' className='p-6 flex' disabled={loading}>
                   {loading&&<Loader2Icon className='animate-spin'/>}
                   Generate Content
               </Button>
