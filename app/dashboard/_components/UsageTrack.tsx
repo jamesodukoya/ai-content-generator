@@ -7,7 +7,7 @@ import { eq } from 'drizzle-orm'
 import Link from 'next/link'
 import React, { useEffect } from 'react'
 
-async function UsageTrack() {
+function UsageTrack() {
 
     const { user } = useUser();
 
