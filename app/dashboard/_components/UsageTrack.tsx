@@ -45,9 +45,9 @@ function UsageTrack() {
                       
                   </div>
               </div>
-              <h2 className='text-sm mt-1'>350/10,000 credits used</h2>
+              <h2 className='text-sm mt-1'>3500/10,000 credits used</h2>
           </div>
-          <Link href='./dashboard/billing'><Button variant={'secondary'} className='w-full my-3 text-primary hover:bg-primary hover:text-white'>Upgrade</Button></Link>
+          <Link href='/dashboard/billing'><Button variant={'secondary'} className='w-full my-3 text-primary hover:bg-primary hover:text-white'>Upgrade</Button></Link>
       </div>
   )
 }

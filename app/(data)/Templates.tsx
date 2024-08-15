@@ -304,3 +304,26 @@ export default [
         ]
     },
 ]
+
+export const pricingOptions = [
+    {
+        title: "Free",
+        price: "₦0",
+        features: [
+            "10,000 words/month",
+            "50+ content templates",
+            "Unlimited download & copy",
+            "1 month of history"
+        ]
+    },
+    {
+       title: "Pro",
+        price: "₦10,000",
+        features: [
+            "Unlimited words/month",
+            "50+ content templates",
+            "Unlimited download & copy",
+            "1 year of history"
+        ] 
+    }
+]
