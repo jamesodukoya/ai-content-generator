@@ -16,11 +16,11 @@ function UsageTrack() {
     //     result&&GetTotalUsage();
     // }, [result && user])
     
-    const GetData=async()=>{
+    // const GetData=async()=>{
 
-        const result = await db.select().from(AIOutput).where(eq(AIOutput.createdBy, user?.primaryEmailAddress?.emailAddress))
+    //     const result = await db.select().from(AIOutput).where(eq(AIOutput.createdBy, user?.primaryEmailAddress?.emailAddress))
     
-    }
+    // }
 
     
     // const GetTotalUsage = () => {
