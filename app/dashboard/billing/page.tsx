@@ -11,7 +11,7 @@ import { UserSubscription } from "@/utils/schema";
 import { db } from "@/utils/db";
 
 
-const billing: NextPage = () => {
+const Billing: NextPage = () => {
 
 
     const { user } = useUser();
@@ -82,4 +82,4 @@ const billing: NextPage = () => {
   );
 }
 
-export default billing
+export default Billing
