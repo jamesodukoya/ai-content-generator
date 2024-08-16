@@ -1,11 +1,17 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { NextSeo } from 'next-seo';
+import FeatureSection from "@/components/feature-section";
+import Header from "@/components/header";
+import Page from "@/components/page";
 
 export default function Home() {
   return (
-    <div>
-      <h2>Generate content using next-gen AI capabilities</h2>
-      <Button>Start Generating</Button>
-    </div>
+    <Page>
+      {/* <NextSeo
+        title="Ludwig - AI Content Generator"
+        description="A TypeScript/Next.js theme that includes everything you need to build amazing landing page!"
+      /> */}
+        <Header />
+        <FeatureSection />
+    </Page>
   );
 }
