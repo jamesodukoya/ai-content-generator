@@ -1,3 +1,4 @@
+import { UserButton } from '@clerk/nextjs'
 import { Search } from 'lucide-react'
 import React from 'react'
 
@@ -8,8 +9,9 @@ function Header() {
         <Search />
         <input type='text' placeholder='Search...' className='outline-none'/>
       </div>
-      <div>
-        <h2 className='bg-primary p-2 rounded-full text-sm text-white px-3'>Subscribe for a membership plan for just $9.99/month</h2>
+      <div className='flex flex-row gap-5 items-center'>
+        <h2 className='bg-primary p-2 rounded-full text-sm text-white px-3'>Subscribe for just $9.99/month</h2>
+        <UserButton/>
       </div>
     </div>
   )
