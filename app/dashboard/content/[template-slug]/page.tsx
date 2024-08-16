@@ -74,7 +74,7 @@ function CreateNewContent(props: PROPS) {
                     <OutputSection aiOutput={aiOutput} />
                 </div>
             </div>
-            <p>EU users may experience difficulty generating content due to certain restrictions in the region's AI regulation.</p>
+            <p>EU users may experience difficulty generating content due to certain restrictions in the region&apos;s AI regulation.</p>
         </div>
   )
 }
