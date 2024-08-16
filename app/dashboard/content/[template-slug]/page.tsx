@@ -37,8 +37,7 @@ function CreateNewContent(props: PROPS) {
         const FinalAIPrompt = JSON.stringify(formData) + ", " + SelectedPrompt;
 
         const result = await chatSession.sendMessage(FinalAIPrompt).catch(function(error:any){
-            alert("Just stop!");
-            if(confirm('Successful Message')){
+            if(confirm('Error generating content. Please note that EU users may experience difficulty generating content due to certain restrictions in the region&apos;s AI regulation.')){
                 window.location.reload();  
             };
         });;

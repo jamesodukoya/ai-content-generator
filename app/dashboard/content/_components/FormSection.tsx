@@ -24,9 +24,7 @@ function FormSection({ selectedTemplate, userFormInput, loading }: PROPS) {
     
     const onSubmit = (e:any) => {
         e.preventDefault();
-        userFormInput(formData).catch(function(error:any){
-  alert("Error generating content")
-        });
+        userFormInput(formData)
     }
 
   return (
