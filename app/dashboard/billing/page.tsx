@@ -7,8 +7,8 @@ import axios from 'axios';
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { NextPage } from "next";
-import { UserSubscription } from "@/utils/schema";
-import { db } from "@/utils/db";
+// import { UserSubscription } from "@/utils/schema";
+// import { db } from "@/utils/db";
 
 
 const Billing: NextPage = () => {
@@ -20,7 +20,7 @@ const Billing: NextPage = () => {
     const params = new URLSearchParams();
     params.append('email', email);
 
-    const [payresult, setPayresult] = useState("");
+    // const [payresult, setPayresult] = useState("");
 
     const route = useRouter();
 
