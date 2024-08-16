@@ -1,3 +1,4 @@
+// eslint-disable react/jsx-key
 "use client"
 import { FileClockIcon, Home, Settings, Wallet } from 'lucide-react'
 import Image from 'next/image'
