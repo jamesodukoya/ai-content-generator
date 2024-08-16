@@ -36,7 +36,12 @@ function CreateNewContent(props: PROPS) {
 
         const FinalAIPrompt = JSON.stringify(formData) + ", " + SelectedPrompt;
 
-        const result = await chatSession.sendMessage(FinalAIPrompt);
+        const result = await chatSession.sendMessage(FinalAIPrompt).catch(function(error:any){
+            alert("Just stop!");
+            if(confirm('Successful Message')){
+                window.location.reload();  
+            };
+        });;
 
         setAiOutput(result?.response.text());
         await SaveInDb(JSON.stringify(formData), selectedTemplate?.slug,result?.response.text());
