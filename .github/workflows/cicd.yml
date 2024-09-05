@@ -1,0 +1,43 @@
+name: "Deploy Ai App to EC2"
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Create .env file
+        run: |
+          echo "Writing secrets to .env file"        
+
+          echo "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{ secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}}" >> .env
+          echo "CLERK_SECRET_KEY=${{ secrets.CLERK_SECRET_KEY}}" >> .env
+          echo "NEXT_PUBLIC_CLERK_SIGN_IN_URL=${{ secrets.NEXT_PUBLIC_CLERK_SIGN_IN_URL}}" >> .env
+          echo "NEXT_PUBLIC_CLERK_SIGN_UP_URL=${{ secrets.NEXT_PUBLIC_CLERK_SIGN_UP_URL}}" >> .env
+          echo "NEXT_PUBLIC_GOOGLE_GEMINI_API_KEY=${{ secrets.NEXT_PUBLIC_GOOGLE_GEMINI_API_KEY}}" >> .env
+          echo "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{ secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}}" >> .env
+          echo "NEXT_PUBLIC_DRIZZLE_DB_URL=${{ secrets.NEXT_PUBLIC_DRIZZLE_DB_URL}}" >> .env
+          echo "SUBSCRIPTION_PLAN_ID=${{ secrets.SUBSCRIPTION_PLAN_ID}}" >> .env
+          echo "PAYSTACK_KEY_ID=${{ secrets.PAYSTACK_KEY_ID}}" >> .env
+          echo "SECRET_KEY=${{ secrets.SECRET_KEY}}" >> .env
+      - name: Build docker image
+        run: docker build -t ai-content-generator
+      - name: Login into docker hub
+        run: docker login -u ${{secrets.DOCKER_USERNAME}} -P ${{secrets.DOCKER_PASSWORD}}
+      - name: Publish image to docker hub
+        run: docker push ai-content-generator:latest
+  deploy:
+    needs: build
+    runs-on: self-hosted
+    steps:
+      - name: Pull image from docker hub
+        run: docker pull ai-content-generator:latest
+      - name: Delete old container
+        run: docker rm -f ai-content-generator
+      - name: Run docker container
+        run: docker run -d -p 3000:3000 --name ac-generator-container ai-content-generator
