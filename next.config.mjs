@@ -2,7 +2,7 @@
 
 //Enviroment check
 
-const isdev = process.env.NODE_ENV === "development";
+const isdev = process.env.ENVIROMENT === "development";
 
 const nextConfig = {
   typescript: {
