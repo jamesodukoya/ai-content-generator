@@ -33,20 +33,20 @@ jobs:
           username: ${{secrets.DOCKER_USERNAME}}
           password: ${{secrets.DOCKER_ACCESS_TOKEN}}
       - name: Publish image to docker hub
-        run: docker push ai-content-generator:latest
+        run: docker push lordrex/ai-content-generator:latest
 
   deploy:
     needs: build
     runs-on: self-hosted
     steps:
       - name: Pull image from docker hub
-        run: docker pull ai-content-generator:latest
+        run: docker pull lordrex/ai-content-generator:latest
       - name: Delete old container
         run: |
           if [ "$(docker ps -a -q -f name=ai-content-generator-container )" ]; then
            docker rm -f ai-content-generator-container
           else
-           echo "ai-content generator container does not exist, skipping deletion..."
+           echo "ai-content-generator-container does not exist, skipping deletion..."
           fi
       - name: Run docker container
-        run: docker run -d -p 3000:3000 --name ai-content-generator-container ai-content-generator:latest
+        run: docker run -d -p 3000:3000 --name ai-content-generator-container lordrex/ai-content-generator:latest
