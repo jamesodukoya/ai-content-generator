@@ -26,7 +26,7 @@ jobs:
           echo "SECRET_KEY=${{ secrets.SECRET_KEY}}" >> .env
           echo "ENVIROMENT=development" >> .env
       - name: Build docker image
-        run: docker build -t ai-content-generator:latest .
+        run: docker build -t lordrex/ai-content-generator:latest .
       - name: Login to Docker hub
         uses: docker/login-action@v3
         with:
