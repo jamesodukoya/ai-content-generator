@@ -67,4 +67,4 @@ while IFS= read -r line || [ -n "${line}" ]; do
     fi
 done <"$ENV_FILE"
 
-echo "Success: All secrets have been set"
+echo "Success: All secrets have been set."
