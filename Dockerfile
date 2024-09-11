@@ -8,6 +8,8 @@ RUN npm ci -f
 
 COPY . .
 
+ENV DISABLE_NEXTJS_CACHE=true
+
 RUN npm run build
 
 FROM node:20-alpine3.18
