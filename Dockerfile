@@ -4,9 +4,7 @@ WORKDIR /app
 
 COPY package.json .
 
-RUN npm install -f --omit=dev
-
-RUN npm prune --production
+RUN npm ci -f --only=production
 
 COPY . .
 
