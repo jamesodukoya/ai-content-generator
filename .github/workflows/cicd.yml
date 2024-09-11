@@ -34,6 +34,8 @@ jobs:
           password: ${{secrets.DOCKER_ACCESS_TOKEN}}
       - name: Publish image to docker hub
         run: docker push lordrex/ai-content-generator:latest
+      - name: Clean up Docker for more space
+        run: docker system prune -f --volumes
 
   deploy:
     needs: build
